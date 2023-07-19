@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+
+        <style>
+
+.text{
+  font-family: 'Courier New', Courier, monospace;
+}
+        #container,#container2,#container3 {
+  display: flex;
+  align-items: center;
+}
+h2,p{
+  color: white;
+}
+img,object {
+  max-width: 100%;
+  height: 300px;
+  width: 600px;
+}
+
+.text {
+  margin-left: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  
+}
+#container1,#container2,#container3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-right: 200px;
+}
+
+
+body {
+  background-color: #1e1d1d;
+}
+.hurricane_text{
+  padding-left: 20px;
+}
+
+.Home{
+  color: white;
+  text-align: left;
+  padding-left: 200px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro{
+  flex: 1;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.image{
+  width: 500px;
+  height: 500px;
+  border-radius: 80px;
+  object-fit: cover;
+  margin-right: 300px;
+}
+
+
+.blue{
+  color: rgb(15, 15, 224);
+  font-weight: bold;
+  background-image: linear-gradient(to left, #005eff, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+            .navbar {
+      background-color: #222;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    
+    .navbar li {
+      margin-left: 10px;
+    }
+    
+    .navbar li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 8px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      font-family:'Courier New', Courier, monospace
+    }
+    
+    .navbar li a:hover {
+      background-color: #005eff;
+    }
+    .linkedin a {
+    text-decoration: none;
+  }
+
+  .linkedin button {
+    background-color: #0072b1;
+    color: white;
+    cursor: pointer;
+    padding: 4px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: opacity .15s;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .linkedin button:hover {
+    opacity: 0.8;
+  }
+
+
+        </style>
+        
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+      const portfolioLink = document.querySelector('a[href="#container1"]');
+
+      portfolioLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        const container1 = document.getElementById('container1');
+        container1.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+
+</script>
+
+        
+    </head>
+  <body>
+
+    <div class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#container1">Portfolio</a></li>
+        <li><a href="Skills.html">Skills</a></li>
+        <li><a href="About Me.html">About</a></li>
+      </ul>
+      <div class="linkedin">
+        <a href="https://www.linkedin.com/in/patrick-day-44ba33190/" target="_blank">
+          <button>
+            LinkedIn
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div class="Home">
+      <div class="intro">
+      <h1>Hello! I am <span class="blue">Patrick</span> <span class="blue">Day</span>,<br></h1>
+      <p>I am into <span class="blue"> GIS </span> and <span class="blue">Programming!</span></p>
+      <p>Check out some of my work below!</p>
+    </div>
+    <div class="image_container">
+      <img class="image" src="Portfolio Images/Portrait.jpg">
+    </div>
+    </div>
+
+    <hr>
+
+   
+
+    <div id="container1">
+        <img src="Portfolio Images/USA Wildifres Dashboard.png">
+        <div class="text">
+          <h2>USA Wildfires Dashboard</h2>
+          <p>In this project, I found data for all wildfires in the United States and created a live Dashboard
+            with this data. This dashboard is dynamic and automatically updates.
+          </p>
+        </div>
+      </div>
+
+
+      <div id="container2">
+        <img src="Portfolio Images/Hurricanes .png">
+        <div class="text">
+          <h2>Hurricanes Since 2000</h2>
+          <p>This map shows data of all hurricanes that have occured since the year 2000 and seperates
+            them by catgeories 1-5. 
+          </p>
+        </div>
+      </div>
+
+    
+
+      <div id="container3">
+        <object data="Portfolio Images/Day_geog365_referencemap.pdf">
+        </object>
+        <div class="text">
+          <h2>Japan Reference Map</h2>
+          <p>This is a full reference map of Japan, with topagraphy values, airports, populated places, and more. 
+          </p>
+        </div>
+      </div>
+
+      <div id="container3">
+        <object data="Portfolio Images/Padibe Layout 1.pdf">
+        </object>
+        <div class="text">
+          <h2>Padibe Camp Water Access</h2>
+          <p>This map uses buffers to show what areas in Padibe Camp have access to water and what areas don't.
+          </p>
+        </div>
+      </div>
+
+
+      <div id="container3">
+        <object data="Portfolio Images/ArcMap Screenshot .png">
+        </object>
+        <div class="text">
+          <h2>ArcPy Coordinates Output</h2>
+          <p> For this project, I was given a file with a list of coordinates in it and I wrote a python
+            script which resulted in the map displayed.
+          </p>
+        </div>
+      </div>
+
+      <div id="container3">
+        <object data="Portfolio Images/New School.png">
+        </object>
+        <div class="text">
+          <h2>New School Location</h2>
+          <p> In this map, I did some spatial analysis to determine where the best location for a new school would be
+            in Rockingham County. The desicion was based on factors such as slope, distance, etc.
+          </p>
+        </div>
+      </div>
+
+      <div id="container3">
+        <object data="Portfolio Images/Day_Geog365_Lab6.pdf">
+        </object>
+        <div class="text">
+          <h2>State Population Maps</h2>
+          <p> These state population maps show both population density in Virginia as well as population change over 
+            a timeline of 10 years.
+          </p>
+        </div>
+      </div>
+
+  </body>
+        
+         
+
+    
+</html>
+
+
+
